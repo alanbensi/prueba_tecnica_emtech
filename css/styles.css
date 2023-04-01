@@ -32,6 +32,16 @@ header::before {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+.containerMenu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+.newBackgroundColor {
+    background-color: #00215be7;
+}
+
 .brandLogo {
     width: 15rem;
 }

@@ -4,11 +4,11 @@ const cardsAPI = document.getElementById("cardsAPI");
 const carrusel = document.getElementById("carrusel");
 
 const callAPI = () => {
-    fetch(API +"/character/[1,2,3,4,5]")
+    fetch(API + "/character/[1,2,3,4,5]")
         .then(res => res.json())
         .then(data => data.forEach(character => {
             cardsAPI.innerHTML +=
-        `
+                `
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
@@ -30,11 +30,11 @@ const callAPI = () => {
 callAPI()
 
 const callSlider = () => {
-    fetch(API +"/character/[1,2,3,4,5,6,7,8,9,10,11,12]")
+    fetch(API + "/character/[1,2,3,4,5,6,7,8,9,10,11,12]")
         .then(res => res.json())
         .then(data => data.forEach(character => {
             carrusel.innerHTML +=
-        `
+                `
         
             <div class="swiper-slide">
                 <img src="${character.image}" alt="${character.name}/>
@@ -48,3 +48,15 @@ const callSlider = () => {
 }
 
 callSlider()
+
+
+window.addEventListener('scroll', function () {
+    const containerMenu = document.querySelector('.containerMenu');
+    const position = window.scrollY;
+
+    if (position > 600) {
+        containerMenu.classList.add('newBackgroundColor');
+    } else {
+        containerMenu.classList.remove('newBackgroundColor');
+    }
+});
