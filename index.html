@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Emtech Institute</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid containerMenu">
+                <div>
+                    <a href="#">
+                        <img class="brandLogo" src="./images/logoHeader.png" alt="Logo Emtech">
+                    </a>
+                </div>
+                <button class="navbar-toggler burgerMenu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav listNav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Programas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Beneficios</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="sectionStart">
+            <button type="button" class="btn modalVideo" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                </svg>
+            </button>
+            <!-- Modal -->
+            <div class="modal modal-lg fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/DlD2sZXR8RI"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1>Bienvenido a Lorem ipsum</h1>
+            <h2 class="subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor sunt minus culpa
+                delectus alias esse
+                distinctio sapiente, deleniti ratione nisi natus illo ducimus quidem ipsam! Vero quae quis doloremque
+                officiis.
+            </h2>
+            <button class="btnContactUs">Contáctanos</button>
+        </section>
+        <img class="imgDots" src="./images/dots.png" alt="Puntos decorativos">
+    </header>
+    <main>
+        <section class="sectionCharacters">
+            <h2>Conoce a nuestros principales personajes</h2>
+            <h3 class="subtitleSectionCharacters">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut
+                cupiditate rem doloremque dolor!
+                Voluptatibus tenetur excepturi iure ad maiores voluptatum voluptatem non autem ratione a? Ipsa quas
+                debitis quos sit?</h3>
+            <div id="cardsAPI"></div>
+            <button class="btnContactUs">Contáctanos</button>
+        </section>
+        <section class="sectionSlider">
+            <h2>Conoce nuestro <br><span>carrusel de personajes</span></h2>
+            <div class="swiper mySwiper">
+                <div id="carrusel" class="swiper-wrapper"></div>
+            </div>
+            <button class="btnContactUs">Ver más</button>
+        </section>
+        <div class="contenedorDots">
+            <img class="rightDots" src="./images/dots.png" alt="Puntos decorativos">
+        </div>
+    </main>
+    <footer>
+        <div class="footerMenu">
+            <div>
+                <h3>Inicio</h3>
+                <ul>
+                    <li>¿Quiénes somos?</li>
+                    <li>¿Qué hacemos?</li>
+                    <li>¿Cómo lo hacemos?</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Cursos</h3>
+                <ul>
+                    <li>Salesforce fos Success</li>
+                    <li>Salesforce Analyst</li>
+                    <li>Salesforce Administrator</li>
+                    <li>Salesforce Developer</li>
+                </ul>
+            </div>
+            <div>
+                <h3>El programa</h3>
+                <ul>
+                    <li>Características</li>
+                    <li>Beneficios</li>
+                    <li>Testimoniales</li>
+                    <li>Nuestra alianza</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contáctanos</h3>
+                <ul>
+                    <li>Formulario de contacto</li>
+                    <li>Síguenos en todas nuestras redes sociales.</li>
+                    <span class="iconify facebookIcon" data-icon="ri:facebook-fill" style="color: #00448f;"></span>
+                    <span class="iconify instagramIcon" data-icon="ant-design:instagram-filled"
+                        style="color: #00448f;"></span>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex align-items-center">
+            <img class="logoFooter" src="./images/logoFooter.png" alt="Logo Emtech">
+            <p class="mb-0">Emerging Technologies Institute | All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/slider.js"></script>
+</body>
+
+</html>
