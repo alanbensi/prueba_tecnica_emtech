@@ -38,6 +38,7 @@ header::before {
     top: 0;
     z-index: 100;
 }
+
 .newBackgroundColor {
     background-color: #00215be7;
 }
@@ -217,7 +218,8 @@ h1 {
     align-items: center;
 }
 
-.sectionSlider h2, .sectionSlider span {
+.sectionSlider h2,
+.sectionSlider span {
     text-align: center;
     font-weight: 700;
     font-size: 40px;
@@ -328,93 +330,123 @@ h1 {
         padding: 1rem;
         height: auto;
     }
+
     .brandLogo {
         width: 12rem;
     }
+
     .navbar-toggler {
         background-color: white !important;
     }
-    .sectionStart {
-    gap: 3rem;
-    margin-top: 3rem;
+
+    .containerMenu {
+        background-color: #00215be7;
     }
+
+    .sectionStart {
+        gap: 3rem;
+        margin-top: 5rem;
+    }
+
     .modalVideo {
         padding: 0.5rem;
     }
+
     h1 {
         font-size: 30px;
     }
+
     .subtitle {
         font-size: 20px;
         width: fit-content;
     }
+
     .imgDots {
         display: none;
     }
+
     .sectionCharacters {
         gap: 2rem;
         margin-top: 2.5rem;
     }
+
     .sectionCharacters h2 {
         text-align: center;
         font-size: 22px;
         margin-bottom: 0;
     }
+
     .subtitleSectionCharacters {
         font-size: 18px;
         padding: 0 1.5rem;
     }
+
     #cardsAPI {
         padding: 1rem;
         flex-wrap: wrap;
         gap: 20px;
     }
+
     .flip-card {
         width: 150px;
         height: 250px;
     }
-    .flip-card-front, .flip-card-back {
+
+    .flip-card-front,
+    .flip-card-back {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     .imgCard {
         margin-top: 0;
         margin-bottom: 0.3rem;
     }
+
     .sectionSlider {
         gap: 3rem;
         padding: 3rem 0;
     }
-    .sectionSlider h2, .sectionSlider span {
+
+    .sectionSlider h2,
+    .sectionSlider span {
         font-size: 30px;
     }
+
     .swiper {
         width: 85%;
         padding: 0;
     }
+
     .characterName {
         font-size: 20px;
     }
+
     .contenedorDots {
         display: none;
     }
+
     .footerMenu {
         padding: 2rem;
         gap: 30px;
         flex-direction: column;
     }
+
     .footerMenu li {
         color: #ddd;
     }
+
     .footerMenu h3 {
         font-size: 18px;
         margin-bottom: 1rem;
-    } 
+    }
+
     .facebookIcon {
         margin-left: 0;
     }
+
     .logoFooter {
         width: 12rem;
     }
